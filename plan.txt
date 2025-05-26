@@ -1,0 +1,106 @@
+Website will consist of:
+    Home Page
+    Mammals Page
+    Birds Page
+    Reptiles Page
+
+------------------------------
+3 files detailing 9 animals
+    3 Mammals
+    3 Birds
+    3 Reptiles
+
+------------------------------
+Page structure
+    Header with logo (each page)
+    Navigational menu with link to (each page):
+        Home
+        Birds
+        Mammals
+        Reptiles
+    Footer (each page)
+    Sidebar + main content area
+        Content will be different for each page, but page layout stays the same
+
+-----------------------------
+Home Page
+    Sidebar
+        Shows list with the names of all the animals
+    Main content
+        Show a welcome message on page load
+        When animal is clicked, welcome message is replaced with short summary of that animal
+        'Read more' button is displayed after 'short summary', clicking it leads to 'animal details
+        If the 'active' animals name is clicked again, it is no longer active and 'welcome' message is displayed
+        Only one animal can be active at a time
+
+        Short summary of animal consists of:
+            Small image of animal
+            Name of animal
+            first 200 characters of the description
+            what the animal eats
+            which group it belongs to WITH a link to the group page (eg mammal, bird or reptile)
+            Clicking on 'read more' button for any animal on the home page should show all the animal details
+
+        Animal details:
+            Pop up modal of sorts - should fill the entire screen except header
+            Show full summary of the animal
+            Show a close button to return to the previous view
+
+-----------------
+Group Page
+    Sidebar
+        Show list with animal names of ONLY that group (no birds in reptile page)
+    Main content
+        Show message about that group type
+        When an animal name is clicked, show full summary of the animal
+        The full summary should show all the properties of an animal. (how it's displayed is up to me!)
+
+-------------------------------
+
+Project structure
+
+Global CSS Variables (inside index.css)
+    Typography
+    Colors
+    Border radius
+    Spacing system
+
+Routing
+    Home
+    Mammals
+    Birds
+    Reptiles
+
+Components
+    Home
+        Header component
+            Navigation component
+                NavItem component
+        Sidebar component
+            MainContent component
+        Footer component
+    Mammals
+        Header component
+            Navigation component
+                NavItem component
+        Sidebar component
+            MainContent component
+        Footer component
+     Birds
+        Header component
+            Navigation component
+                NavItem component
+        Sidebar component
+            MainContent component
+        Footer component
+     Reptiles
+        Header component
+            Navigation component
+                NavItem component
+        Sidebar component
+            MainContent component
+        Footer component    
+
+data.js
+    Array of all animals data
+    
