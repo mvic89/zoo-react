@@ -1,5 +1,10 @@
 .layoutContainer {
     max-width: 1200px;
+    min-height: 100dvh;
     width: 90%;
     margin: 0 auto;
+    background-color: bisque;
+
+    display: grid;
+    grid-template-rows:  auto 1fr auto;
 }

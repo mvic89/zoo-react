@@ -1,9 +1,10 @@
 import NavItem from "../NavItem"
 import styles from './navigation.module.css'
+import { links } from "../../data"
 
 const Navigation = () => {
 
-    const links = ['Home', 'Mammals', 'Birds', 'Reptiles']
+    // const links = ['Home', 'Mammals', 'Birds', 'Reptiles']
 
     return (
         <nav className={styles.navLinkContainer}>

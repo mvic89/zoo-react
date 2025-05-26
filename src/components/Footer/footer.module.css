@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerLinksContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.logoSm {
+    width: 80px;
+}
+
+.activeLink:link, .activeLink:visited {
+    color: var(--primary-shade);
+}
+
+.footerLink:link, .footerLink:visited {
+    color: var(--grey-base);
+}
+
+.footerLink:hover, .footerLink:active {
+    color: var(--primary-shade);
+}
+
+.copyText {
+    font-size: var(--text-base);
+}
+
