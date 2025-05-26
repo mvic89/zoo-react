@@ -127,3 +127,9 @@ h5 {
 p {
     font-size: var(--text-paragraph);
 }
+
+a {
+    text-decoration: none;
+    font-size: var(--text-base);
+    display: inline-block;
+}

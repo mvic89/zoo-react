@@ -1,0 +1,24 @@
+.navItemBtn {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--text-base);
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+}
+
+.navItemBtn:link, .navItemBtn:visited {
+    color: var(--white);
+    background-color: var(--primary-base);
+    border: 2px solid var(--primary-base);
+}
+.navItemBtn:hover, .navItemBtn:active {
+    color: var(--white);
+    background-color: var(--primary-shade);
+    border: 2px solid var(--primary-shade);
+}
+
+.active:link, .active:visited {
+    background-color: var(--primary-shade);  
+    border: 2px solid var(--primary-shade);
+    
+}
