@@ -133,4 +133,23 @@ Sidebar functionality
     Reptiles
         Group sidebar component
             Looping through only animals of that group
+
+---------------------
+Site architecture
+    localhost/
+        localhost/animalnames + homesidebar
+    localhost/mammals/
+        locahost/mammals/mammalsname1
+        locahost/mammals/mammalsname2
+        locahost/mammals/mammalsname3
+    localhost/bird/
+        locahost/bird/birdname1
+        locahost/bird/birdname2
+        locahost/bird/birdname3
+    localhost/mammals/
+        locahost/reptile/reptilename1
+        locahost/reptile/reptilename2
+        locahost/reptile/reptilename3
+
+
     
