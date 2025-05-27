@@ -103,4 +103,34 @@ Components
 
 data.js
     Array of all animals data
+
+--------------------------------------------
+Layout (wrapping all routes that will share the same components (nav-menu and footer in this case))
+    Home
+    Mammals
+    Birds
+    Reptiles
+
+Layout
+    Header
+    Outlet
+    Footer
+
+--------------------
+Sidebar functionality
+    Home 
+        Home sidebar component
+            Looping through all animals
+    
+    Mammals
+        Group sidebar component
+            Looping through only animals of that group
+            
+    Birds
+        Group sidebar component
+            Looping through only animals of that group
+
+    Reptiles
+        Group sidebar component
+            Looping through only animals of that group
     
