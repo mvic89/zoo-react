@@ -1,0 +1,17 @@
+.sidebar {
+  width: 200px; /* or whatever width you want */
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.sidebarItem {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  font-weight: bold;
+  color: blue;
+}

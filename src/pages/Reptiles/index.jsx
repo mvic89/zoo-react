@@ -1,11 +1,16 @@
 import Sidebar from "../../components/Sidebar";
 import GroupContent from "../../components/GroupContent";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AnimalContext } from "../../context/AnimalContext";
 import animals from "../../animalsdata";
 
 const Reptiles = () => {
-  const { selectedAnimal } = useContext(AnimalContext);
+  const { selectedAnimal, setSelectedAnimal } = useContext(AnimalContext);
+
+  useEffect(() => {
+    setSelectedAnimal(null);
+  }, [setSelectedAnimal]);
+
   const animal = animals.find(a => a.name === selectedAnimal && a.group === "reptile");
 
   return (

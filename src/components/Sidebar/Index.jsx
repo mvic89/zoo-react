@@ -9,12 +9,16 @@ const Sidebar = () => {
   const location = useLocation();
   const path = location.pathname;
 
-  let filteredAnimals = animals;
+  const pathGroupMap = {
+    "/mammals": "mammals",
+    "/birds": "bird",
+    "/reptiles": "reptile"
+  };
 
-  if (path === "/mammals" || path === "/birds" || path === "/reptiles") {
-    const group = path.slice(1); // "mammals", "birds", or "reptiles"
-    filteredAnimals = animals.filter((a) => a.group === group);
-  }
+  const group = pathGroupMap[path];
+  let filteredAnimals = group
+    ? animals.filter((a) => a.group === group)
+    : animals;
 
   return (
     <aside className={styles.sidebar}>

@@ -1,3 +1,4 @@
+// context/AnimalContext.js
 import { createContext, useState } from "react";
 
 export const AnimalContext = createContext();
@@ -10,7 +11,7 @@ export const AnimalProvider = ({ children }) => {
   };
 
   return (
-    <AnimalContext.Provider value={{ selectedAnimal, toggleAnimal }}>
+    <AnimalContext.Provider value={{ selectedAnimal, toggleAnimal, setSelectedAnimal }}>
       {children}
     </AnimalContext.Provider>
   );
