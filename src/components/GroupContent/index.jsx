@@ -1,7 +1,9 @@
 const GroupContent = ({ animal }) => {
   return (
+    <>
     <div>
       <h2>{animal.name}</h2>
+      <img src={animal.image} alt="animal-image" />
       <p>{animal.description}</p>
       <ul>
         <li><strong>Lifespan:</strong> {animal.lifespan}</li>
@@ -11,6 +13,10 @@ const GroupContent = ({ animal }) => {
         <li><strong>Found:</strong> {animal.found}</li>
       </ul>
     </div>
+    <div>
+      
+    </div>
+    </>
   );
 };
 

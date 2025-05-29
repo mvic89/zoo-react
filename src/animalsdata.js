@@ -1,6 +1,17 @@
+import echidnaImg from './assets/echidna.jpg';
+import tasmanianDevilImg from './assets/tasmanian-devil.jpg';
+import quokkaImg from './assets/quokka.jpg';
+import frillNeckedLizardImg from './assets/frilled-lizard.jpg';
+import hawksbillTurtleImg from './assets/hawksbill.jpg';
+import perentieImg from './assets/perentie.jpg';
+import cassowaryImg from './assets/cassowary.jpg';
+import kookaburraImg from './assets/kookaburra.jpg';
+import cockatooImg from './assets/cockatoo.jpg';
+
 const animals = [
     {
         name: 'Echidna',
+        image: echidnaImg,
         lifespan: '50 years',
         group: 'mammals',
         food: 'insects such as ants and termites, beetle larvae and worms',
@@ -11,6 +22,7 @@ const animals = [
     },
     {
         name: 'Tasmanian Devil',
+        image: tasmanianDevilImg,
         lifespan: '5 years',
         group: 'mammals',
         food: 'A predator, then eat meat from other animals such as wallabies and wombats',
@@ -21,6 +33,7 @@ const animals = [
     },
     {
         name: 'Quokka',
+        image: quokkaImg,
         lifespan: '10 years',
         group: 'mammals',
         food: 'Plant eaters, they munch on shrubs and grasses',
@@ -31,6 +44,7 @@ const animals = [
     },
     {
         name: 'Frill-necked Lizard',
+        image: frillNeckedLizardImg,
         lifespan: '20 years',
         group: 'reptile',
         food: 'Small insects and spiders',
@@ -41,6 +55,7 @@ const animals = [
     },   
     {
         name: 'Hawksbill Turtle',
+        image: hawksbillTurtleImg,
         lifespan: '50 years',
         group: 'reptile',
         food: 'other animals (sponges & jellyfish), sea plants',
@@ -51,6 +66,7 @@ const animals = [
     },
     {
         name: 'Perentie',
+        image: perentieImg,
         lifespan: '20 years',
         group: 'reptile',
         food: 'Carnivore, they eat animals like kangaroos, rabbits, lizards and birds',
@@ -61,6 +77,7 @@ const animals = [
     },
     {
         name: 'Cassowary',
+        image: cassowaryImg,
         lifespan: '20 years',
         group: 'bird',
         food: 'Plants matter like fruit, insects and small animals like mice amd lizards',
@@ -71,6 +88,7 @@ const animals = [
     },  
     {
         name: 'Kookaburra',
+        image: kookaburraImg,
         lifespan: '20 years',
         group: 'bird',
         food: 'Insects and smalll animals including snakes, frogs and lizards',
@@ -81,6 +99,7 @@ const animals = [
     },
     {
         name: 'Cockatoo',
+        image: cockatooImg,
         lifespan: '41 years',
         group: 'bird',
         food: 'Fruit, seeds and other plant material',
