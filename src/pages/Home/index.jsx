@@ -3,6 +3,7 @@ import MainContent from "../../components/MainContent";
 import { useContext, useEffect } from "react";
 import { AnimalContext } from "../../context/AnimalContext";
 import animals from "../../animalsdata";
+import styles from './home.module.css'
 
 const Home = () => {
   const { selectedAnimal, setSelectedAnimal } = useContext(AnimalContext);
@@ -14,7 +15,7 @@ const Home = () => {
   const animal = animals.find(a => a.name === selectedAnimal);
 
   return (
-    <div style={{ display: "flex" }}>
+    <div className={styles.homeContainer}>
       <Sidebar />
       <div style={{ marginLeft: "1rem" }}>
         {animal ? <MainContent animal={animal} /> : <h3>Welcome to the home page!</h3>}
