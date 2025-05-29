@@ -3,6 +3,7 @@ import GroupContent from "../../components/GroupContent";
 import { useContext, useEffect } from "react";
 import { AnimalContext } from "../../context/AnimalContext";
 import animals from "../../animalsdata";
+import styles from './birds.module.css'
 
 const Birds = () => {
   const { selectedAnimal, setSelectedAnimal } = useContext(AnimalContext);
@@ -14,7 +15,7 @@ const Birds = () => {
   const animal = animals.find(a => a.name === selectedAnimal && a.group === "bird");
 
   return (
-    <div style={{ display: "flex" }}>
+    <div className={styles.birdContainer}>
       <Sidebar />
       <div style={{ marginLeft: "1rem" }}>
         {animal ? <GroupContent animal={animal} /> : <h3>Welcome to Birds page!</h3>}

@@ -1,0 +1,9 @@
+.birdContainer {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .birdContainer {
+        flex-direction: column;
+    }
+}
