@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
 
-const groupRouteMap = {
-  bird: 'birds',
-  reptile: 'reptiles',
-  mammals: 'mammals'
-};
+
 
 const GroupContent = ({ animal }) => {
-  const groupPath = groupRouteMap[animal.group];
+
 
   return (
     <>
@@ -16,10 +12,13 @@ const GroupContent = ({ animal }) => {
       </div>
       <div>
         <h2>{animal.name}</h2>
-        <h4>{animal.food}</h4>
-        {groupPath && (
-          <Link to={`/${groupPath}`}>{animal.group}</Link>
-        )}
+        <p>{animal.group}</p>
+        <p>{animal.description}</p>
+        <p><strong>Lifespan: </strong>{animal.lifespan}</p>
+        <p><strong>Food: </strong>{animal.food}</p>
+        <p><strong>Length: </strong>{animal.length}</p>
+        <p><strong>Weight: </strong>{animal.weight}</p>
+        <p><strong>Found: </strong>{animal.found}</p>
       </div>
     </>
   );
