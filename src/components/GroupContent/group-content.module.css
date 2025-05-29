@@ -1,0 +1,16 @@
+.groupImageContainer {
+     max-width: 600px;
+}
+
+.groupImage {
+    width: 100%;
+}
+
+.groupStyling {
+    padding-bottom: 1rem;
+    color: var(--grey-shade);
+}
+
+.descriptionStyling {
+    padding-bottom: 1rem;
+}

@@ -17,7 +17,7 @@ const Mammals = () => {
   return (
     <div className={styles.mammalContainer}>
       <Sidebar />
-      <div style={{ marginLeft: "1rem" }}>
+      <div className={styles.animalsContainer}>
         {animal ? <GroupContent animal={animal} /> : <h3>Welcome to Mammals page!</h3>}
       </div>
     </div>

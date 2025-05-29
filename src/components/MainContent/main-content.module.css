@@ -1,0 +1,39 @@
+.animalImageContainer {
+     max-width: 600px;
+}
+
+.animalImage {
+    width: 100%;
+}
+
+.groupStyling {
+    padding-bottom: 1rem;
+}
+
+
+
+.groupStyling:link, .groupStyling:visited {
+    color: var(--grey-base)
+}
+
+.groupStyling:hover, .groupStyling:active {
+    color: var(--primary-shade)
+}
+
+.descriptionContainer {
+    padding-top: 1rem;
+}
+
+.readMore {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.readMore:link, .readMore:visited {
+    color: var(--primary-base)
+}
+
+.readMore:hover, .readMore:active {
+    color: var(--primary-shade)
+}

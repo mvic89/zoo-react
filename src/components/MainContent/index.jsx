@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import styles from './main-content.module.css'
 
 const groupRouteMap = {
   bird: 'birds',
@@ -15,32 +16,32 @@ const MainContent = ({ animal }) => {
 
   return (
     <>
-      <div>
-        <img src={animal.image} alt="animal-image" />
+      <div className={styles.animalImageContainer}>
+        <img className={styles.animalImage} src={animal.image} alt="animal-image" />
       </div>
       <div>
-        <h2>{animal.name}</h2>
-        <h4>Food: {animal.food}</h4>
+        <h3>{animal.name}</h3>
         {groupPath && (
-          <Link to={`/${groupPath}`}>{animal.group}</Link>
+          <Link className={styles.groupStyling} to={`/${groupPath}`}>{animal.group}</Link>
         )}
 
         <div>
           <p>{showFullDescription ? animal.description : shortedDescription}</p>
 
           {showFullDescription && (
-            <>
+            <div className={styles.descriptionContainer}>
+              <p><strong>Food:</strong> {animal.food}</p>
               <p><strong>Lifespan:</strong> {animal.lifespan}</p>
               <p><strong>Length:</strong> {animal.length}</p>
               <p><strong>Weight:</strong> {animal.weight}</p>
               <p><strong>Found:</strong> {animal.found}</p>
-            </>
+            </div>
           )}
         </div>
 
-        <Link
+        <Link className={styles.readMore}
           onClick={() => setShowFullDescription((prev) => !prev)}
-          style={{ cursor: 'pointer', display: 'inline-block', marginTop: '0.5rem' }}
+          
         >
           {showFullDescription ? 'Less' : 'More'}
         </Link>

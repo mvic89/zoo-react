@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div className={styles.homeContainer}>
       <Sidebar />
-      <div style={{ marginLeft: "1rem" }}>
+      <div className={styles.animalsContainer}>
         {animal ? <MainContent animal={animal} /> : <h3>Welcome to the home page!</h3>}
       </div>
     </div>
