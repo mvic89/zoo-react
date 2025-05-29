@@ -1,17 +1,24 @@
 .sidebar {
-  width: 200px; /* or whatever width you want */
+  width: 240px; 
   padding: 1rem;
-  background-color: #f9f9f9;
 }
 
 .sidebarItem {
   display: block;
   padding: 0.5rem;
   text-decoration: none;
-  color: black;
+  color: var(--grey-shade);
 }
 
-.active {
-  font-weight: bold;
-  color: blue;
+.sidebarItem:hover, .sidebarItem.active {
+  color: var(--primary-base)
+}
+
+.active:link, .active:visited {
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-shade);
+}
+
+.active:hover, .active:active {
+  color: var(--primary-shade);
 }

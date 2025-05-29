@@ -1,4 +1,3 @@
-// context/AnimalContext.js
 import { createContext, useState } from "react";
 
 export const AnimalContext = createContext();
