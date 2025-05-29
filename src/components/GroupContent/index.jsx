@@ -1,21 +1,26 @@
+import { Link } from "react-router-dom";
+
+const groupRouteMap = {
+  bird: 'birds',
+  reptile: 'reptiles',
+  mammals: 'mammals'
+};
+
 const GroupContent = ({ animal }) => {
+  const groupPath = groupRouteMap[animal.group];
+
   return (
     <>
-    <div>
-      <h2>{animal.name}</h2>
-      <img src={animal.image} alt="animal-image" />
-      <p>{animal.description}</p>
-      <ul>
-        <li><strong>Lifespan:</strong> {animal.lifespan}</li>
-        <li><strong>Food:</strong> {animal.food}</li>
-        <li><strong>Length:</strong> {animal.length}</li>
-        <li><strong>Weight:</strong> {animal.weight}</li>
-        <li><strong>Found:</strong> {animal.found}</li>
-      </ul>
-    </div>
-    <div>
-      
-    </div>
+      <div>
+        <img src={animal.image} alt="animal-image" />
+      </div>
+      <div>
+        <h2>{animal.name}</h2>
+        <h4>{animal.food}</h4>
+        {groupPath && (
+          <Link to={`/${groupPath}`}>{animal.group}</Link>
+        )}
+      </div>
     </>
   );
 };
