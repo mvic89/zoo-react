@@ -5,7 +5,7 @@ import { AnimalContext } from "../../context/AnimalContext";
 import animals from "../../animalsdata";
 import styles from './reptiles.module.css'
 
-const Reptiles = () => {
+const Reptiles = ({reptilesText}) => {
   const { selectedAnimal, setSelectedAnimal } = useContext(AnimalContext);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const Reptiles = () => {
     <div className={styles.reptileContainer}>
       <Sidebar />
       <div className={styles.animalsContainer}>
-        {animal ? <GroupContent animal={animal} /> : <h3>Welcome to Reptiles page!</h3>}
+        {animal ? <GroupContent animal={animal} /> : <h3 className={styles.reptileStyling}>{reptilesText}</h3>}
       </div>
     </div>
   );

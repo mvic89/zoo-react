@@ -10,4 +10,8 @@
     .mammalContainer {
         flex-direction: column;
     }
+
+    .mammalStyling {
+        text-align: center;
+    }
 }

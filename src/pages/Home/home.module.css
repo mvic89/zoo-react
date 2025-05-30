@@ -6,8 +6,13 @@
     padding: 2rem 6rem;
 }
 
+ 
 @media screen and (max-width: 768px) {
     .homeContainer {
         flex-direction: column;
+    }
+
+    .homeStyling {
+    text-align: center;
     }
 }

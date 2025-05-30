@@ -12,10 +12,10 @@ function App() {
     <>
       <Routes>
         <Route element={<Layout/>}>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/mammals' element={<Mammals/>}/>
-          <Route path='/birds' element={<Birds/>}/>
-          <Route path='/reptiles' element={<Reptiles/>}/>
+          <Route path='/' element={<Home homeText='Welcome to the Australian Zoo!'/>}/>
+          <Route path='/mammals' element={<Mammals mammalsText='Welcome to the Mammals Page!'/>}/>
+          <Route path='/birds' element={<Birds birdsText='Welcome to the Birds Page!'/>}/>
+          <Route path='/reptiles' element={<Reptiles reptilesText='Welcome to Reptiles Page!'/>}/>
         </Route>
       </Routes>
     </>
