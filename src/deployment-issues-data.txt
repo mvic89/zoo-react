@@ -1,0 +1,9 @@
+error during build:
+Could not resolve "../../components/Sidebar" from "src/pages/Layout/index.jsx"
+file: /vercel/path0/src/pages/Layout/index.jsx
+    at getRollupError (file:///vercel/path0/node_modules/rollup/dist/es/shared/parseAst.js:400:41)
+    at error (file:///vercel/path0/node_modules/rollup/dist/es/shared/parseAst.js:396:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21389:24)
+    at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21349:26
+Error: Command "npm run build" exited with 1
+Exiting build container
