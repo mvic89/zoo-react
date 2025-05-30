@@ -78,6 +78,7 @@ Components
                 NavItem component
         Sidebar component
             MainContent component
+            GroupContent component
         Footer component
     Mammals
         Header component
@@ -85,6 +86,7 @@ Components
                 NavItem component
         Sidebar component
             MainContent component
+            GroupContent component
         Footer component
      Birds
         Header component
@@ -92,6 +94,7 @@ Components
                 NavItem component
         Sidebar component
             MainContent component
+            GroupContent component
         Footer component
      Reptiles
         Header component
@@ -99,6 +102,7 @@ Components
                 NavItem component
         Sidebar component
             MainContent component
+            GroupContent component
         Footer component    
 
 data.js
