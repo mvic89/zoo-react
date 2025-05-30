@@ -1,6 +1,6 @@
 import styles from './footer.module.css'
 import { Link,  NavLink } from 'react-router-dom'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/Logo.png'
 
 const Footer = () => {
     return (
