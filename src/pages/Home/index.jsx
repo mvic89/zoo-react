@@ -16,7 +16,6 @@ const Home = ({homeText}) => {
 
   return (
     <div className={styles.homeContainer}>
-      <Sidebar />
       <div className={styles.animalsContainer}>
         {animal ? <MainContent animal={animal} /> : <h3 className={styles.homeStyling}>{homeText}</h3>}
       </div>

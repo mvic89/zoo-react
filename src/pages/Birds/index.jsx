@@ -16,7 +16,6 @@ const Birds = ({birdsText}) => {
 
   return (
     <div className={styles.birdContainer}>
-      <Sidebar />
       <div className={styles.animalsContainer}>
         {animal ? <GroupContent animal={animal} /> : <h3 className={styles.birdStyling}>{birdsText}</h3>}
       </div>
