@@ -15,7 +15,7 @@
 }
 
 .activeLink:link, .activeLink:visited {
-    color: var(--primary-shade);
+    color: var(--grey-base);
 }
 
 .footerLink:link, .footerLink:visited {
