@@ -14,3 +14,9 @@
 .descriptionStyling {
     padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: var(--text-h4);
+    }
+}

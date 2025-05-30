@@ -37,3 +37,17 @@
 .readMore:hover, .readMore:active {
     color: var(--primary-shade)
 }
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: var(--text-h4);
+    }
+
+    p {
+        font-size: var(--text-sm);
+    }
+
+    .readMore {
+        font-size: var(--text-sm);
+    }
+}
