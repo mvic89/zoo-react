@@ -1,4 +1,3 @@
-import Sidebar from "../../components/Sidebar";
 import GroupContent from "../../components/GroupContent";
 import { useContext, useEffect } from "react";
 import { AnimalContext } from "../../context/AnimalContext";
